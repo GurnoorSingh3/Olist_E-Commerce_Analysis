@@ -8,15 +8,22 @@ The project follows a complete data analysis workflow, starting with raw CSV fil
 
 The main focus was on understanding e-commerce sales, customers, products, orders, delivery performance, and reviews.
 
-**Workflow:**
+**Workflow:** `Python → PostgreSQL → Power BI`
 
-`Python → PostgreSQL → Power BI`
+![Dashboard preview](dashboard.png)
 
----
+## Key Findings
+
+- Delivered sales were about **R$13.22M** across **96,478** delivered orders, with an average order value of **R$137.04**.
+- **Health & beauty** was the highest-revenue category, followed by watches & gifts and bed & bath table.
+- About **97%** of customers made only one delivered purchase; repeat customers were about 3% but had higher average spending per customer.
+- Average delivery time was about **12.5 days**, and **8.11%** of valid delivered orders arrived later than estimated.
+- Late-delivery rates varied by state, with Alagoas (23.93%) and Maranhão (19.67%) the highest.
+- Late deliveries averaged a review score of **2.57**, compared with **4.29** for on-time deliveries.
 
 ## Dataset
 
-The project uses the **Olist Brazilian E-Commerce Public Dataset**.
+The project uses the Olist Brazilian E-Commerce Public Dataset.
 
 The dataset contains multiple related tables covering:
 
@@ -30,23 +37,19 @@ The dataset contains multiple related tables covering:
 * Product categories
 * Geolocation
 
-The dataset contains **99,441 orders** and **112,650 order-item records**.
+The dataset contains 99,441 orders and 112,650 order-item records.
 
 A key part of the analysis was understanding the difference between the order and order-item levels. Revenue calculations were therefore based on item-level data from the `order_items` table.
 
----
-
 ## Tools
 
-* **Python**
-* **Pandas**
-* **Jupyter Notebook**
-* **PostgreSQL**
-* **SQL**
-* **Power BI**
-* **GitHub**
-
----
+* Python
+* Pandas
+* Jupyter Notebook
+* PostgreSQL
+* SQL
+* Power BI
+* GitHub
 
 ## Project Steps
 
@@ -110,8 +113,6 @@ Relationships were created between the tables and a DateTable was used for time-
 
 The dashboard was then built using the results from the SQL analysis.
 
----
-
 ## Dashboard
 
 [Download Power BI Dashboard (.pbix)](https://drive.google.com/uc?export=download&id=18jNaoiD8lLlKXdqX3dUH67FN1WebgUE_)
@@ -129,24 +130,18 @@ The Power BI dashboard contains:
 
 The dashboard was designed to keep the analysis easy to explore without adding unnecessary visual complexity.
 
----
+## Project Report and Presentation
 
-## Results
+The detailed findings, calculations, and analysis are documented in the project report and summarised in a presentation:
 
-The analysis produced a set of findings around:
+* Project report: [`Olist_Ecommerce_Analysis_Styled.pdf`](Olist_Ecommerce_Analysis_Styled.pdf)
+* Presentation: [`Olist-E-Commerce-Analysis.pptx`](Olist-E-Commerce-Analysis.pptx)
 
-* Sales performance over time
-* Product category performance
-* Customer purchasing behaviour
-* Delivery performance
-* Regional differences
-* Customer review scores
+## Limitations
 
-The detailed findings, calculations, and analysis are documented in the project report.
-
-**Project report:** `Olist_Ecommerce_Analysis_Styled.pdf`
-
----
+* This is a historical dataset, so the results do not describe Olist's current performance.
+* The repeat-customer percentage is affected by the limited observation period.
+* The comparison between delivery performance and review scores shows an association in the data. It does not prove that late delivery was the only reason for lower review scores.
 
 ## How to Run
 
@@ -169,5 +164,6 @@ The detailed findings, calculations, and analysis are documented in the project 
 1. Open the `.pbix` file.
 2. Update the PostgreSQL connection if required.
 3. Refresh the data.
+4. Explore the dashboard.
 4. Explore the dashboard.
 
