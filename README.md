@@ -114,7 +114,7 @@ The dashboard was then built using the results from the SQL analysis.
 
 ## Dashboard
 
-[Download Power BI Dashboard (.pbix)]([YOUR_GOOGLE_DRIVE_LINK](https://drive.google.com/file/d/18jNaoiD8lLlKXdqX3dUH67FN1WebgUE_/view?usp=sharing))
+[Download Power BI Dashboard (.pbix)](https://drive.google.com/file/d/18jNaoiD8lLlKXdqX3dUH67FN1WebgUE_/view?usp=sharing)
 
 The Power BI dashboard contains:
 
